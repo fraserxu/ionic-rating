@@ -48,3 +48,7 @@ project.
 ```
 $ coffee -c ionic-rating.coffee
 ```
+
+#### License
+
+MIT
