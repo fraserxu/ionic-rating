@@ -1,7 +1,7 @@
 {
   "name": "ionic-rating",
   "main": "ionic-rating.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/fraserxu/ionic-rating",
   "authors": [
     "fraserxu <xvfeng123@gmail.com>"

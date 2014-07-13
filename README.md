@@ -49,7 +49,8 @@ project.
 #### Build
 
 ```
-$ coffee -c ionic-rating.coffee
+$ npm i
+$ make all
 ```
 
 #### License
