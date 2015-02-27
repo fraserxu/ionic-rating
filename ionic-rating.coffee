@@ -69,7 +69,7 @@ angular.module 'ionic.rating', []
             onLeave: '&'
         controller: 'RatingController'
         template: '<ul class="rating" ng-mouseleave="reset()" ng-keydown="onKeydown($event)">' +
-            '<li ng-repeat="r in range track by $index" ng-click="rate($index + 1)"><i class="icon" ng-class="$index < value && (r.stateOn || \'ion-ios7-star\') || (r.stateOff || \'ion-ios7-star-outline\')"></i></li>' +
+            '<li ng-repeat="r in range track by $index" ng-click="rate($index + 1)"><i class="icon" ng-class="$index < value && (r.stateOn || \'ion-ios-star\') || (r.stateOff || \'ion-ios-star-outline\')"></i></li>' +
             '</ul>'
         replace: true
         link: (scope, element, attrs, ctrls) ->
