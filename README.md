@@ -23,13 +23,13 @@ $ bower install ionic-rating
 
 In you template:
 
-```
+```HTML
 <rating ng-model="rate" max="max"></rating>
 ```
 
 In you controller:
 
-```
+```JavaScript
 // first inject it into your app
 angular.module('youApp', ['ionic.rating'])
 
@@ -42,6 +42,10 @@ angular.module('youApp', ['ionic.rating'])
 });
 
 ```
+
+If you want to make it read only
+
+> added readonly="readOnly" to rating directive, and $scope.readOnly = true; to the controller.
 
 **Note:** You may also need to include the style file. But I suggest you just copy it to your
 project.
