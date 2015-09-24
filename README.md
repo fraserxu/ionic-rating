@@ -21,6 +21,12 @@ Install with bower:
 $ bower install ionic-rating
 ```
 
+In your index.html
+
+```HTML
+<script src="lib/ionic-rating/ionic-rating.js"></script>
+```
+
 In you template:
 
 ```HTML
