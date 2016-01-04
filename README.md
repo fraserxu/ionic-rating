@@ -53,6 +53,12 @@ angular.module('youApp', ['ionic.rating'])
 
 ```
 
+For strict-di, you can use
+
+```
+.controller('RatingController', [ '$scope', '$attrs', 'ratingConfig', function($scope, $attrs, ratingConfig) ]
+```
+
 If you want to make it read only
 
 > added readonly="readOnly" to rating directive, and $scope.readOnly = true; to the controller.
