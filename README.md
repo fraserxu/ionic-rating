@@ -6,6 +6,9 @@ for ionic.
 
 ![rating](https://cloud.githubusercontent.com/assets/1183541/3007107/3cee642c-de6c-11e3-8449-18b86ca130a7.png)
 
+Also able to print half star (display only) :
+
+![rating-half](https://cloud.githubusercontent.com/assets/7658059/12101509/67ee6d6c-b335-11e5-9ef6-0ceb92018fd2.png)
 
 #### Why?
 
@@ -24,13 +27,13 @@ $ bower install ionic-rating
 In your index.html
 
 ```HTML
-<script src="lib/ionic-rating/ionic-rating.js"></script>
+<script src="lib/ionic-rating/ionic-rating.min.js"></script>
 ```
 
 In you template:
 
 ```HTML
-<rating ng-model="rate" max="max"></rating>
+<rating ng-model="rating.rate" max="rating.max"></rating>
 ```
 
 In you controller:
@@ -42,8 +45,9 @@ angular.module('youApp', ['ionic.rating'])
 .controller('yourCtrl', function($scope) {
 
   // set the rate and max variables
-  $scope.rate = 3;
-  $scope.max = 5;
+  $scope.rating = {};
+  $scope.rating.rate = 3;
+  $scope.rating.max = 5;
 
 });
 
