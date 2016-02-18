@@ -1,6 +1,6 @@
 {
   "name": "ionic-rating",
-  "version": "0.1.0",
+  "version": "0.0.3",
   "devDependencies": {
     "uglify-js": "^2.4.14",
     "coffee-script": "^1.7.1"

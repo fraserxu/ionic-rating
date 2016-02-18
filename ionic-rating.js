@@ -55,7 +55,7 @@
         readonly: '=?'
       },
       controller: 'RatingController',
-      template: '<ul class="rating" ng-keydown="onKeydown($event)">' + '<li ng-repeat="r in range track by $index" ng-click="rate($index + 1)"><i class="icon" ng-class="value === undefined ? (r === 1 ? \'ion-ios-star\' : (r === 2 ? \'ion-ios-star-half\' : \'ion-ios-star-outline\')) : (value > $index ? \'ion-ios-star\' : \'ion-ios-star-outline\')"></i></li>' + '</ul>',
+      template: '<ul class="rating" ng-keydown="onKeydown($event)">' + '<li ng-repeat="r in range track by $index" ng-click="rate($index + 1)"><i class="icon" ng-class="value === undefined ? (r === 1 ? \'ion-ios-star\' : (r === 2 ? \'ion-ios-star-half\' : \'ion-ios-star-outline\')) : (value > $index ? (value < $index+1 ? \'ion-ios-star-half\' : \'ion-ios-star\') : \'ion-ios-star-outline\')"></i></li>' + '</ul>',
       replace: true,
       link: function(scope, element, attrs, ctrls) {
         var ngModelCtrl, ratingCtrl;
