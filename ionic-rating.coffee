@@ -64,7 +64,7 @@ angular.module 'ionic.rating', []
         restrict: 'EA'
         require: ['rating', 'ngModel']
         scope:
-            readonly: '=?'
+            readonly: '@'
             onHover: '&'
             onLeave: '&'
         controller: 'RatingController'
